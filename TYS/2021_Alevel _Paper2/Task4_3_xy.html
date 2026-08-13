@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<h1>Mean Scores</h1>
+	<table>
+		<tr>
+			<td>Competitor name</td>
+			<td>Mean score</td>
+		</tr>
+		{% for i in people %}
+			<tr>
+				<td>{{ i[0] }}</td>
+				<td>{{ i[1] }}</td>
+			</tr>
+		{% endfor %}
+		<tr>
+			<td>
+			<form action = "{{ url_for ('home') }}">
+				<input type = "submit" value = "HomePage">
+			</td>
+		</tr>
+	</table>
+</html>

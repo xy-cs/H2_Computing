@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<table>
+		<tr>
+			<td>
+				<form action = "{{ url_for('round1') }}" method = "POST">
+					<input type = "submit" value = "Round 1 Scores">
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<form action = "{{ url_for('round2') }}" method = "POST">
+					<input type = "submit" value = "Round 2 Scores">
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<form action = "{{ url_for('round3') }}" method = "POST">
+					<input type = "submit" value = "Round 3 Scores">
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<form action = "{{ url_for('mean') }}" method = "POST">
+					<input type = "submit" value = "Mean Scores">
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<form action = "{{ url_for('qualifiers') }}" method = "POST">
+					<input type = "submit" value = "Qualifiers">
+				</form>
+			</td>
+		</tr>
+	</table>	
+</html>	
